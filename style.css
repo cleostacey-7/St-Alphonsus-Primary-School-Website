@@ -1,0 +1,167 @@
+.role-btn.active {
+  background-color: #3e5046;
+  color: white;
+}
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  margin-left: 45px;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  background: #3e5046;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.card-container {
+  position: fixed; 
+  top: 300px;       
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;               
+  width: 100%;             
+  max-height: calc(100vh - 60px); 
+  overflow-y: auto; 
+  background-color: white;
+  z-index: 50;
+}
+
+.card {
+  max-width: 150px;         
+  width: 146px; 
+  min-height: 250px;       
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
+  border-radius: 12px;     
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;          
+  padding: 8px;             
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; 
+}
+
+.role-item-image { 
+  border-radius: 8px; 
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #3e5046;
+  color: white;
+  flex-basis: 100%;
+  position: sticky; 
+  bottom: -20%; 
+  overflow: hidden;
+}
+
+    .page-header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    /* Labels and selects */
+    label {
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    select, input[type="text"], input[type="email"], input[type="number"] {
+        padding: 6px 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 250px;
+    }
+
+    input[type="submit"] {
+        padding: 8px 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    /* Table wrapper for responsiveness */
+    .table-responsive {
+        width: 95%;
+        margin: 20px auto;
+        overflow-x: auto;
+    }
+
+    /* Table styles */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+    }
+
+    thead th {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        text-align: left;
+    }
+
+    tbody td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    @media (max-width: 600px) {
+        label, select, input[type="text"], input[type="email"], input[type="number"] {
+            width: 100%;
+            font-size: 14px;
+        }
+        tbody td, thead th {
+            font-size: 12px;
+            padding: 6px;
+        }
+    }
